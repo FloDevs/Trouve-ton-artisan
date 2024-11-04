@@ -1,0 +1,32 @@
+.page-404 {
+    padding: 50px 0;
+    
+    h1 {
+      font-size: 4rem;
+      color: #ff5722; // Couleur pour le texte "404"
+      font-weight: bold;
+    }
+  
+    p {
+      font-size: 1.25rem;
+      color: #666;
+    }
+  
+    .image-container {
+      margin: 20px 0;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  
+    .btn {
+      background-color: #007bff;
+      color: #fff;
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  
