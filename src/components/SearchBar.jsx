@@ -43,13 +43,18 @@ function SearchBar({ onSearch }) {
         <input
           type="text"
           className="form-control"
-          placeholder="Rechercher un artisan..."
+          placeholder="Rechercher..."
           value={query}
           onChange={handleChange}
           aria-label="Search"
           maxLength="50"
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              handleSubmit(e);
+            }
+          }}
         />
-        <button type="submit" className="btn btn-primary">Rechercher</button>
+        
       </form>
       {error && <p className="error-message">{error}</p>}
     </div>

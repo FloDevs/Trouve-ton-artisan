@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url('../src/font/Graphik-Regular-Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#root {
+    font-family: 'Graphik', sans-serif;
+}

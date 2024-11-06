@@ -1,0 +1,15 @@
+.title-list {
+    background-color: #F1F8FC;
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+.card-list {
+    height: 16rem !important;
+}
+}
+
+
+@media (min-width: 1024px) {  
+    .card-list {
+        height: 16rem !important;
+    }
+}
