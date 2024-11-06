@@ -1,15 +1,14 @@
 .title-list {
-    background-color: #F1F8FC;
+  background-color: #f1f8fc;
 }
 @media (min-width: 600px) and (max-width: 1024px) {
-.card-list {
+  .card-list {
     height: 16rem !important;
-}
+  }
 }
 
-
-@media (min-width: 1024px) {  
-    .card-list {
-        height: 16rem !important;
-    }
+@media (min-width: 1024px) {
+  .card-list {
+    height: 16rem !important;
+  }
 }

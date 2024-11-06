@@ -1,89 +1,86 @@
-img{
-    height: 3rem;
-    width: 8rem;
+img {
+  height: 3rem;
+  width: 8rem;
 }
 .navbar {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 header {
-    background-color: #0074C7;
-    height: 4rem;
+  background-color: #0074c7;
+  height: 4rem;
 }
 
 .navbar-brand {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .navbar-toggler {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .background-img {
-    background-color: #f1f8fc;
-    margin-left: 0.5rem;
-    border-radius: 10px;
-    height: 3rem;
+  background-color: #f1f8fc;
+  margin-left: 0.5rem;
+  border-radius: 10px;
+  height: 3rem;
 }
 
 .navbar-toggler {
-    background-color:#0074C7;
-    border: #0074C7 !important;
+  background-color: #0074c7;
+  border: #0074c7 !important;
 }
 .navbar-toggler-icon {
-    background-color: #0074C7;
+  background-color: #0074c7;
 }
 
 .nav-link {
-    color:#f1f8fc !important;
+  color: #f1f8fc !important;
 }
 
-
 @media (min-width: 600px) and (max-width: 1024px) {
-header {
+  header {
     height: 6rem;
     padding-top: 1rem;
     padding-bottom: 6rem;
-} 
-.navbar-nav {
+  }
+  .navbar-nav {
     margin-right: 1rem;
-}
-.background-img {
+  }
+  .background-img {
     margin-right: 2rem;
     height: 4rem;
     margin-left: 2rem;
-}
-img {
+  }
+  img {
     height: 4rem;
     width: 10rem;
-}
-.nav-item {
+  }
+  .nav-item {
     font-size: 1.2rem;
+  }
 }
-}
 
-
-@media (min-width: 1025px) { 
-
-    header {
-        height: 8rem;
-        padding-top: 1rem;
-        padding-bottom: 6rem;
-    } 
-    .navbar-nav {
-        margin-right: 5rem;
-    }
-    .background-img {
-        margin-right: 15rem;
-        height: 5rem;
-        margin-left: 2rem;
-    }
-    img {
-        height: 6rem;
-        width: 14rem;
-    }
-    .nav-item {
-        font-size: 1.2rem;
-    }
+@media (min-width: 1025px) {
+  header {
+    height: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+  }
+  .navbar-nav {
+    margin-right: 5rem;
+  }
+  .background-img {
+    margin-right: 15rem;
+    height: 5rem;
+    margin-left: 2rem;
+  }
+  img {
+    height: 6rem;
+    width: 14rem;
+  }
+  .nav-item {
+    font-size: 1.2rem;
+  }
 }

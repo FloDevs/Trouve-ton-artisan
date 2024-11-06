@@ -1,9 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from './pages/Home';
-import Page404 from './pages/Page404';
-import ArtisanDetail from './pages/ArtisanDetail';
-import ArtisanList from './pages/ArtisanList';
-import './App.css';
+import Home from "./pages/Home";
+import Page404 from "./pages/Page404";
+import ArtisanDetail from "./pages/ArtisanDetail";
+import ArtisanList from "./pages/ArtisanList";
+import "./App.css";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     element: <ArtisanList />,
   },
   {
-    path: "/artisan-detail/:id", 
+    path: "/artisan-detail/:id",
     element: <ArtisanDetail />,
   },
 ]);
