@@ -17,7 +17,7 @@ function ArtisanDetail() {
   };
 
   useEffect(() => {
-    fetch("/datas.json")
+    fetch("datas.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
