@@ -18,7 +18,7 @@ function Footer() {
   return (
     <footer>
       <nav className="navbar navbar-expand-lg navbar-footer">
-        <div className="container">
+        <div className="container container-footer">
           <address className="address">
             101 cours Charlemagne
             <br />
