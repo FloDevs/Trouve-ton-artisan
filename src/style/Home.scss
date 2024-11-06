@@ -1,131 +1,117 @@
 .find-artisan {
-    background-color: #F1F8FC;
-    margin-top: 1rem;
-    padding: 0.5rem;
+  background-color: #f1f8fc;
+  margin-top: 1rem;
+  padding: 0.5rem;
 }
 
 .title-home {
-    font-size: 1.3rem;
-    text-align: center;
-    border: 3px solid #cd2c2e;
-    border-radius: 10px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  border: 3px solid #cd2c2e;
+  border-radius: 10px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .step-header {
-    display: flex;
-      align-items: center;
-      cursor: pointer;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 .steps-list {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .step-item {
-    border-bottom: 1px solid #cd2c2e;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+  border-bottom: 1px solid #cd2c2e;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
-.step-toggle  {
-    margin-left: auto;
+.step-toggle {
+  margin-left: auto;
 }
 
 .step-content {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .card-link {
-    text-decoration: none;
-    
+  text-decoration: none;
 }
 
 .col-md-4 {
-    width: 20rem;
+  width: 20rem;
 }
 
 .cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .card {
-    background-color: #F1F8FC;
-    border: 1px solid #82b864;
+  background-color: #f1f8fc;
+  border: 1px solid #82b864;
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-.cards {
+  .cards {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    
-}
-.col-md-4 {
+  }
+  .col-md-4 {
     width: 18rem;
     height: 20rem;
     display: flex;
     flex-direction: column;
-    
-    
-}
-.card .card-body .card-title {
+  }
+  .card .card-body .card-title {
     font-size: 1.5rem;
-    
-}
+  }
 
-.top-artisans{
+  .top-artisans {
     font-size: 1.2rem;
-}
-.container {
+  }
+  .container {
     font-size: 1.5rem;
-}
-.title-home {
+  }
+  .title-home {
     font-size: 2rem;
     margin-bottom: 2rem;
+  }
 }
 
+@media (min-width: 1024px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 
-}
+  .col-md-4 {
+    width: 18rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+  }
 
-@media (min-width: 1024px) { 
+  .card .card-body .card-title {
+    font-size: 1.5rem;
+  }
 
-    .cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        
-    } 
-    
-    .col-md-4 {
-        width: 18rem;
-        height: 20rem;
-        display: flex;
-        flex-direction: column;
-        
-        
-    }
-
-    .card .card-body .card-title {
-        font-size: 1.5rem;
-        
-    }
-    
-    .top-artisans{
-        font-size: 1.2rem;
-    }
-    .container {
-        font-size: 1.5rem;
-    }
-    .title-home {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-    
+  .top-artisans {
+    font-size: 1.2rem;
+  }
+  .container {
+    font-size: 1.5rem;
+  }
+  .title-home {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
 }

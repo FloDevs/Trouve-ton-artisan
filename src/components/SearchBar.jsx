@@ -1,22 +1,22 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import '../style/SearchBar.scss';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
+import "../style/SearchBar.scss";
 
 function SearchBar({ onSearch }) {
-  const [query, setQuery] = useState('');
-  const [error, setError] = useState('');
+  const [query, setQuery] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const sanitizeInput = (input) => {
     const trimmedInput = input.trim().slice(0, 50);
-    const safeInput = trimmedInput.replace(/[<>#{};$*|`^]/g, '');
+    const safeInput = trimmedInput.replace(/[<>#{};$*|`^]/g, "");
 
     if (/script|<|>|\$|{|}/i.test(safeInput)) {
-      setError('Requête invalide, veuillez réessayer.');
-      return '';
+      setError("Requête invalide, veuillez réessayer.");
+      return "";
     }
-    setError('');
+    setError("");
     return safeInput;
   };
 
@@ -27,13 +27,11 @@ function SearchBar({ onSearch }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
 
-    if (typeof onSearch === 'function') {
+    if (typeof onSearch === "function") {
       onSearch(query);
     }
-    
-    // Redirige vers la page ArtisanList avec le terme de recherche
+
     navigate(`/artisan-list?search=${encodeURIComponent(query)}`);
   };
 
@@ -49,12 +47,11 @@ function SearchBar({ onSearch }) {
           aria-label="Search"
           maxLength="50"
           onKeyDown={(e) => {
-            if (e.key === 'Enter') {
+            if (e.key === "Enter") {
               handleSubmit(e);
             }
           }}
         />
-        
       </form>
       {error && <p className="error-message">{error}</p>}
     </div>
