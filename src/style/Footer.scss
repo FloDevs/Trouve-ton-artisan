@@ -27,12 +27,16 @@ footer {
     flex-grow: 1;
   }
 
-  .div-footer {
-    margin-left: 6rem;
-  }
+ 
 
   .ms-auto {
     display: flex;
     align-items: center;
+  }
+
+  .container.container-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
