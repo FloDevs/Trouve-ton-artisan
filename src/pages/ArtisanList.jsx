@@ -11,7 +11,7 @@ function ArtisanList() {
   const location = useLocation();
 
   useEffect(() => {
-    fetch("/datas.json")
+    fetch("datas.json")
       .then((response) => response.json())
       .then((data) => {
         setArtisans(data);
