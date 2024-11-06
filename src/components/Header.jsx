@@ -2,19 +2,24 @@ import { NavLink } from 'react-router-dom';
 import '../style/Header.scss';
 import SearchBar from './SearchBar';
 import PropTypes from 'prop-types';
+import logo from '../../public/Logo.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Header({ onSearch }) {
-  console.log('onSearch dans Header:', onSearch); // Vérifiez si onSearch est bien transmis
+   
 
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
-        <NavLink className="navbar-brand ms-5" to="/">
-          <img src="Logo.png" alt="Logo avec écrit : Trouve ton artisan ! Avec la région Auvergne Rhône-Alpes" />
+        <div className="background-img">
+        <NavLink className="navbar-brand" to="/">
+          <img src={logo} alt="Logo avec écrit : Trouve ton artisan ! Avec la région Auvergne Rhône-Alpes" />
         </NavLink>
-        <SearchBar onSearch={onSearch} /> {/* Transmet onSearch à SearchBar */}
+        </div>
+        <SearchBar onSearch={onSearch} /> 
         <button
-          className="navbar-toggler me-5"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"

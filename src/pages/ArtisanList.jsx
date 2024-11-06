@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useLocation, NavLink } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import "../style/ArtisanList.scss"
 
 function ArtisanList() {
   const [artisans, setArtisans] = useState([]);
@@ -58,25 +59,27 @@ function ArtisanList() {
     <>
       <Header onSearch={handleSearch} />
       <div className="container">
-        <h2>Liste des artisans</h2>
+        <h1 className='title-home title-list'>Liste des artisans</h1>
         {loading ? (
           <p>Chargement des artisans...</p> // Affiche un message de chargement
         ) : (
-          <div className="row">
+          <div className="cards">
             {filteredArtisans.length > 0 ? (
               filteredArtisans.map(artisan => (
                 <div key={artisan.id} className="col-md-4">
-                  <div className="card mb-3">
+                  <NavLink to={`/artisan-detail/${artisan.id}`} className="card-link">
+                  <div className="card mb-3 card-list">
                     <div className="card-body">
                       <h5 className="card-title">{artisan.name}</h5>
-                      <p className="card-text">Spécialité: {artisan.specialty}</p>
-                      <p className="card-text">Note: {Array.from({ length: artisan.note }, () => '⭐').join('')}</p>
-                      <p className="card-text">Localisation: {artisan.location}</p>
-                      <NavLink to={`/artisan-detail/${artisan.id}`} className="btn btn-primary">
-                        Voir plus
-                      </NavLink>
+                      <p className="card-text">{artisan.specialty}</p>
+                      <p className="card-text">{Array.from({ length: artisan.note }, () => '⭐').join('')}</p>
+                      <p className="card-text">{artisan.location}</p>
+                      
+                        
+                      
                     </div>
                   </div>
+                  </NavLink>
                 </div>
               ))
             ) : (

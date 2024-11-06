@@ -1,0 +1,42 @@
+footer {
+    background-color: #0074C7;
+}
+
+.address {
+    color: #384050;
+    margin: 1rem;
+}
+
+
+
+.navbar-toggler-footer {
+    margin-right: 3rem;
+}
+
+.navbar-footer {
+    padding: 0;
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+.navbar-footer {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+
+}
+
+.nav-footer {
+    margin-right: 5rem;
+    flex-grow: 1;
+}
+
+.div-footer {
+    margin-left: 6rem;
+}
+
+.ms-auto {
+    display: flex;
+    align-items: center;
+}
+
+}
